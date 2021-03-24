@@ -1,7 +1,6 @@
 # importing all required libraries
 from boto.s3.connection import S3Connection
 import os
-s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
 from telethon.sync import TelegramClient
 from telethon.tl.functions.channels import GetParticipantsRequest
 from telethon.tl.types import InputPeerUser, InputPeerChannel, ChannelParticipantsSearch
